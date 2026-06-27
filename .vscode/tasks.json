@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile TypeScript",
+      "type": "shell",
+      "command": "tsc",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$tsc"],
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Watch TypeScript",
+      "type": "shell",
+      "command": "tsc",
+      "args": ["--watch"],
+      "group": "build",
+      "problemMatcher": ["$tsc"],
+      "isBackground": true,
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      }
+    },
+    {
+      "label": "Build Calculator App",
+      "type": "shell",
+      "command": "tsc",
+      "args": ["calculator\\ app/index.ts"],
+      "group": "build",
+      "problemMatcher": ["$tsc"]
+    },
+    {
+      "label": "Build Counter App",
+      "type": "shell",
+      "command": "tsc",
+      "args": ["project\\ counter\\ app/index.ts"],
+      "group": "build",
+      "problemMatcher": ["$tsc"]
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+h1 {
+    align-items: center;
+    color: blue;
+}
+
+.inc {
+    background-color: greenyellow;
+    color: green;
+    border: solid greenyellow;
+}
+
+.dec {
+    background-color: red;
+    color: red;
+    border: solid red;
+}
+
+.reset {
+    background-color: blue;
+    color: blue;
+    border: solid blue;
+}
+
+.counting{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+}
+
+.values {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    float: auto;
+}
